@@ -591,7 +591,7 @@ p{color:var(--steel-mid);line-height:1.65;}
           <a href="mailto:hello@wolfforge.co.uk"><svg class="icon"><use href="#icon-mail"/></svg>hello@wolfforge.co.uk</a>
         </div>
       </div>
-      <form class="contact__form" id="contactForm">
+<form class="contact__form" id="contactForm" action="https://formspree.io/f/xgavkdbz" method="POST">
         <div class="field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -690,13 +690,7 @@ p{color:var(--steel-mid);line-height:1.65;}
     });
   });
 
-  // Contact form — no backend wired up yet
-  var form = document.getElementById('contactForm');
-  var status = document.getElementById('contactStatus');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    status.textContent = "Thanks — this form isn't connected to an inbox yet. Wire it up to Formspree, Netlify Forms, or your own backend to start receiving messages.";
-  });
+
 })();
 </script>
 
